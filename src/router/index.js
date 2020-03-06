@@ -6,12 +6,12 @@ import TextCss from '@/components/TextCss.vue';
 const routes = [
   {
     path: '/',
-    redirect: '/flex-css'
+    redirect: '/flex-basic-grow-shrink'
   }, {
     path: '/box-shadow',
     component: BoxShadow
   }, {
-    path: '/flex-css',
+    path: '/flex-basic-grow-shrink',
     component: FlexProp
   }, {
     path: '/text-css',
