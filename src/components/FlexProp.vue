@@ -50,4 +50,5 @@
         flex-grow: 3;
         flex-shrink: 0;
     }
+
 </style>
