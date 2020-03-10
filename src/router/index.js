@@ -1,13 +1,15 @@
 import VueRouter from 'vue-router';
-import BoxShadow from '@/components/BoxShadow.vue';
 import FlexProp from '@/components/FlexProp.vue';
-import TextCss from '@/components/TextCss.vue';
-import FlexBasis from '@/components/FlexBasis.vue'
+import BoxShadow from '@/components/BoxShadow.vue';
+import FlexBasis from '@/components/FlexBasis.vue';
+import TwoScrolls from '@/components/TwoScrolls.vue';
+import BlockNesting from '@/components/BlockNesting.vue';
+import TextLimitLines from '@/components/TextLimitLines.vue';
 
 const routes = [
   {
     path: '/',
-    redirect: '/flex-basis'
+    redirect: '/block-nesting'
   }, {
     path: '/box-shadow',
     component: BoxShadow
@@ -15,17 +17,22 @@ const routes = [
     path: '/flex-basic-grow-shrink',
     component: FlexProp
   }, {
-    path: '/text-css',
-    component: TextCss
+    path: '/text-line-limit',
+    component: TextLimitLines
   }, {
     path: '/flex-basis',
     component: FlexBasis
+  }, {
+    path: '/two-scroll',
+    component: TwoScrolls
+  }, {
+    path: '/block-nesting',
+    component: BlockNesting
   }
 ];
 
 const store = new VueRouter({
   routes: routes
 });
-
 
 export default store;
