@@ -7,11 +7,12 @@ import BlockNesting from '@/components/BlockNesting.vue';
 import TextLimitLines from '@/components/TextLimitLines.vue';
 import CaretColor from '@/components/CaretColor.vue';
 import Placeholder from '@/components/Placeholder.vue';
+import OutlineProp from '@/components/OutlineProp.vue';
 
 const routes = [
   {
     path: '/',
-    redirect: '/placeholder'
+    redirect: '/outline'
   }, {
     path: '/box-shadow',
     component: BoxShadow
@@ -36,6 +37,9 @@ const routes = [
   }, {
     path: '/placeholder',
     component: Placeholder
+  }, {
+    path: '/outline',
+    component: OutlineProp
   }
 ];
 
