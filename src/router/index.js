@@ -5,11 +5,13 @@ import FlexBasis from '@/components/FlexBasis.vue';
 import TwoScrolls from '@/components/TwoScrolls.vue';
 import BlockNesting from '@/components/BlockNesting.vue';
 import TextLimitLines from '@/components/TextLimitLines.vue';
+import CaretColor from '@/components/CaretColor.vue';
+import Placeholder from '@/components/Placeholder.vue';
 
 const routes = [
   {
     path: '/',
-    redirect: '/block-nesting'
+    redirect: '/placeholder'
   }, {
     path: '/box-shadow',
     component: BoxShadow
@@ -28,6 +30,12 @@ const routes = [
   }, {
     path: '/block-nesting',
     component: BlockNesting
+  }, {
+    path: '/caret-color',
+    component: CaretColor
+  }, {
+    path: '/placeholder',
+    component: Placeholder
   }
 ];
 

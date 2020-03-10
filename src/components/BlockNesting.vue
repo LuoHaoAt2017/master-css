@@ -1,5 +1,10 @@
 <template>
     <div class="block-nesting">
+        <div class="poetry">
+            <a href="https://www.cnblogs.com/lovelvxia/p/5726316.html">
+                参考资料
+            </a>
+        </div>
 
         <div class="poetry">
             p标签虽然是块级元素，但是
