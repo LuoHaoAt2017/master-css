@@ -8,11 +8,12 @@ import TextLimitLines from '@/components/TextLimitLines.vue';
 import CaretColor from '@/components/CaretColor.vue';
 import Placeholder from '@/components/Placeholder.vue';
 import OutlineProp from '@/components/OutlineProp.vue';
+import TransformTab from '@/components/TransformTab.vue';
 
 const routes = [
   {
     path: '/',
-    redirect: '/outline'
+    redirect: '/transform'
   }, {
     path: '/box-shadow',
     component: BoxShadow
@@ -40,6 +41,9 @@ const routes = [
   }, {
     path: '/outline',
     component: OutlineProp
+  }, {
+	path: '/transform',
+	component: TransformTab
   }
 ];
 

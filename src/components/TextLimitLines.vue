@@ -29,10 +29,7 @@
             display: -webkit-box;
             -webkit-line-clamp: 2;
             overflow: hidden;
-            /* autoprefixer: off */
             -webkit-box-orient: vertical;
-            /* autoprefixer: on */
-
             border: 1px solid #aaa;
             margin-bottom: 20px;
         }
