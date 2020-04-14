@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js" type="text/javascript" charset="utf-8" async defer></script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="section-1 common">
+                <button data-control="box-1">消失/隐藏</button>
+                <div class="box-1" data-target="box-1">display: none/block </div>
+                <button data-control="box-1">不占据空间 | 不可点击</button>
+            </div>
+            <div class="section-2 common">
+                <button data-control="box-2">消失/隐藏</button>
+                <div class="box-2" data-target="box-2">visibility: hidden/visible</div>
+                <button data-control="box-2">占据空间 | 不可以点击</button>
+            </div>
+            <div class="section-3 common">
+                <button data-control="box-3">消失/隐藏</button>
+                <div class="box-3" data-target="box-3">opacity: 0/1</div>
+                <button data-control="box-3">占据空间 | 可以点击</button>
+            </div>
+            <div class="section-4 common">
+                <button data-control="box-4">消失/隐藏</button>
+                <div class="box-4" data-target="box-4">z-index: -1</div>
+                <button data-control="box-4">占据空间 | 不可以点击</button>
+            </div>
+            <div class="section-5 common">
+                <button data-control="box-5">消失/隐藏</button>
+                <div class="box-5" data-target="box-5">max-height: 0</div>
+                <button data-control="box-5">占据空间 | 不可以点击</button>
+            </div>
+            <div class="section-6 common">
+                <button data-control="box-6">消失/隐藏</button>
+                <div class="box-6" data-target="box-6">
+                    visibility: hidden/visible
+                    position: absolute
+                </div>
+                <button data-control="box-6">不占据空间 | 不可以点击</button>
+            </div>
+        </div>
+    </body>
+</html>

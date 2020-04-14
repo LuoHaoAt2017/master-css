@@ -1,0 +1,45 @@
+.common {
+	padding: 20px 40px;
+	margin: 20px;
+	border: 1px solid #eee;
+	background: rgba(255, 0, 0, 0.1);
+	height: 200px;
+}
+
+.common .box-1 {
+	width: 200px;
+	height: 100px;
+
+	background: rgba(0, 255, 0, 0.5);
+	position: absolute;
+
+	display: none;
+	opacity: 0;
+
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+.common:hover .box-1 {
+	display: block;
+	opacity: 1;
+}
+
+.common .box-2 {
+	width: 200px;
+	height: 100px;
+
+	background: rgba(0, 255, 0, 0.5);
+	position: absolute;
+
+	visibility: hidden;
+	opacity: 0;
+	
+	transition-property: opacity;
+	transition-duration: 2s;
+}
+
+.common:hover .box-2 {
+	visibility: visible;
+	opacity: 1;
+}

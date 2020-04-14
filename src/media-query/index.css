@@ -1,0 +1,296 @@
+@import url("portrait.css") screen and (orientation:portrait);
+@import url("landscape.css") screen and (orientation:landscape);
+
+body {
+	background: rgba(255, 255, 255, 1);
+	margin: 0;
+	overflow-y: scroll;
+}
+
+/*匹配的原则：从上往下匹配，如果有两个都匹配那么最后的优先级高，前一个忽略。*/
+/*如果768px的媒体查询放在960px前面，当页面尺寸处于550px至768px之间时
+此时，768px，960px都满足，由于960px在后面，因此768px样式被忽略。*/
+
+/*@media screen and (max-width: 768px) {
+	body {
+		background: rgba(0, 255, 0, 0.2);
+	}
+}*/
+
+@media screen and (min-width: 1204px) {
+	#app {
+		width: 1024px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header {
+		margin-left: 10px;
+		margin-right: 10px;
+
+		background: rgba(0, 255, 0, 0.2);
+		height: 100px;
+		width: 1004px;
+	}
+
+	.header ul {
+		padding-left: 0;
+		margin: 0;
+	}
+
+	.header ul li {
+		display: inline-block;
+		margin-right: 5px;
+		background: rgba(255, 255, 255, 1);
+	}
+
+	.sidebar {
+		float: left;
+		width: 220px;
+		min-height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		background: rgba(255, 0, 0, 0.2);
+	}
+
+	.content {
+		float: right;
+		width: 764px;
+		min-height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+		background: rgba(0, 0, 255, 0.2);
+		margin-bottom: 10px;
+	}
+
+	.footer {
+		margin-left: 10px;
+		margin-right: 10px;
+		
+		height: 100px;
+		width: 1004px;
+		clear: both;
+		background: rgba(0, 255, 0, 0.2);
+	}
+}
+
+
+@media screen and (max-width: 960px) and (min-width: 960px) {
+	#app {
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header {
+		margin-left: 10px;
+		margin-right: 10px;
+
+		background: rgba(0, 255, 0, 0.2);
+		height: 100px;
+		width: 940px;
+	}
+
+	.header ul {
+		padding-left: 0;
+		margin: 0;
+	}
+
+	.header ul li {
+		display: inline-block;
+		margin-right: 5px;
+		background: rgba(255, 255, 255, 1);
+	}
+
+	.sidebar {
+		float: left;
+		width: 220px;
+		min-height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		background: rgba(255, 0, 0, 0.2);
+	}
+
+	.content {
+		float: right;
+		width: 700px;
+		min-height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+		background: rgba(0, 0, 255, 0.2);
+		margin-bottom: 10px;
+	}
+
+	.footer {
+		margin-left: 10px;
+		margin-right: 10px;
+		
+		height: 100px;
+		width: 940px;
+		clear: both;
+		background: rgba(0, 255, 0, 0.2);
+	}
+}
+
+/* ipad的尺寸 768*1024 */
+@media screen and (max-width: 768px) and (min-width: 768px)  {
+	/*针对屏幕尺寸小于等于768px的设备*/
+	#app {
+		width: 768px;
+		height: 1024px;
+		overflow-y: scroll;
+
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.header {
+		margin-left: 10px;
+		margin-right: 10px;
+		background: rgba(0, 255, 0, 0.2);
+		height: 100px;
+		width: 748px;
+	}
+
+	.header ul {
+		padding-left: 0;
+		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		align-items: center;
+	}
+
+	.header ul li {
+		display: inline-block;
+		margin-right: 5px;
+		background: rgba(255, 255, 255, 1);
+		font-size: 24px;
+		display: inline-block;
+		padding: 10px;
+	}
+
+	.sidebar {
+		float: left;
+		width: 748px;
+		min-height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		background: rgba(255, 0, 0, 0.2);
+	}
+
+	.content {
+		float: right;
+		width: 748px;
+		min-height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 10px;
+		background: rgba(0, 0, 255, 0.2);
+		margin-bottom: 10px;
+	}
+
+	.footer {
+		margin-left: 10px;
+		margin-right: 10px;
+		
+		height: 100px;
+		width: 748px;
+		clear: both;
+		background: rgba(0, 255, 0, 0.2);
+	}
+}
+
+/* 谷歌推出的pixel手机和iphone 6/7/8 plus手机的宽度是414 */
+@media screen and (max-width: 414px) and (min-width: 414px) {
+	#app {
+		width: 414px;
+		height: 736px;
+		overflow-y: scroll;
+	}
+	.header {
+		height: auto;
+		margin: 0 10px;
+		background: rgba(0, 255, 255, 0.2);
+	}
+	.header .nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		padding-left: 0;
+	}
+	.nav li {
+		
+	}
+	.content {
+		margin: 0 10px;
+		height: 400px;
+		background: rgba(0, 0, 255, 0.2);
+		margin: 10px;
+	}
+	.sidebar {
+		display: none;
+	}
+	.footer {
+		margin: 0 10px;
+		height: 100px;
+		background: rgba(255, 0, 255, 0.2);
+	}
+}
+
+/* iphone 6/7/8/X 手机的宽度是375 */
+@media screen and (max-width: 375px) and (min-width: 375px) {
+	#app {
+		width: 375px;
+		height: 667px;
+		overflow-y: scroll;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.header {
+		margin-left: 10px;
+		margin-right: 10px;
+
+		background: rgba(0, 255, 0, 0.2);
+		height: 100px;
+	}
+	.header .nav {
+		display: inline-block;
+	}
+	.sidebar {
+		width: 355px;
+		min-height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		background: rgba(255, 0, 0, 0.2);
+	}
+	.content {
+		width: 355px;
+		min-height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		background: rgba(0, 0, 255, 0.2);
+		margin-bottom: 10px;
+	}
+	.footer {
+		margin-left: 10px;
+		margin-right: 10px;
+		height: 100px;
+		background: rgba(0, 255, 0, 0.2);
+	}
+}
+
+/* iphone 5/SE 手机的宽度是320 */
+@media screen and (max-width: 320px) {
+
+}
+
