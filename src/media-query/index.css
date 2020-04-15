@@ -17,6 +17,8 @@ body {
 	}
 }*/
 
+/*媒体查询能做到针对不同尺寸的设备布局，但是居于两个设备之间的尺寸苍白无力。*/
+
 @media screen and (min-width: 1204px) {
 	#app {
 		width: 1024px;
