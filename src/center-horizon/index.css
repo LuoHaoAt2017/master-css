@@ -1,0 +1,57 @@
+.li-bai {
+    text-align: center;
+    color: red;
+    font-size: 24px;
+    font-weight: lighter;
+    border: 1px solid springgreen;
+    margin-bottom: 20px;
+}
+.li-bai h3 {
+    border: 1px solid;
+}
+.li-bai p {
+    border: 1px solid;
+    width: 640px;
+    /* 将块级子元素转换成内敛元素，父元素上的text-align就会生效。*/
+    display: inline-block;
+}
+
+.li-he {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.bao-zhao {
+    color: greenyellow;
+    font-size: 24px;
+    font-weight: lighter;
+    border: 1px solid springgreen;
+    margin-bottom: 20px;
+    position: relative;
+}
+.bao-zhao .chapter {
+    border: 1px solid;
+    display: inline-block;
+    width: 640px;
+    position: absolute;
+    left: 50%; /* 相对于父元素宽度 */
+    transform: translateX(-50%); /* 相对于子元素自身宽度 */
+    text-align: center;
+}
+.chapter h3 {
+    border: 1px solid;
+}
+.chapter p {
+    border: 1px solid;
+}
+
+.wang-wei {
+    border: 1px solid blueviolet;
+    margin-bottom: 20px;
+    display: flex; /* 父元素设置flex，将子元素设置成flex-item。 */
+}
+
+.wang-wei .mountain-brook {
+    margin: 0 auto; /* 子元素设置margin */
+}
