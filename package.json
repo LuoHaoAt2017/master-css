@@ -1,12 +1,11 @@
 {
-  "name": "hello-css",
+  "name": "master-css",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
   },
   "dependencies": {
+<<<<<<< HEAD
     "core-js": "^3.6.4",
     "element-ui": "^2.13.0",
     "node-sass": "^4.13.1",
@@ -14,10 +13,9 @@
     "vue": "^2.6.11",
     "vue-router": "^3.1.6",
     "vuex": "^3.1.2"
+=======
+>>>>>>> test
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.2.0",
-    "@vue/cli-service": "^4.2.0",
-    "vue-template-compiler": "^2.6.11"
   }
 }

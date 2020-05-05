@@ -73,3 +73,18 @@ else min-width 优先
 ------------------------------------------------------------------
 
 
+可以继承的属性
+font-size
+font-weight
+color
+text-align(对块级元素无效)
+visibility
+
+不可以继承的属性
+margin
+border
+padding
+width
+height
+display
+opacity

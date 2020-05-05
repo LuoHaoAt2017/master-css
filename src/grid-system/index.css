@@ -1,0 +1,14 @@
+
+.col-container {
+	height: 100px;
+	background: rgba(0, 0, 255, 0.5);
+	border-radius: 10px;
+}
+
+.row {
+	margin-bottom: 20px;
+}
+
+.col {
+	border-radius: 4px;
+}

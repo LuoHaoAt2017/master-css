@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <style type="text/css" media="screen">
+            .cols .col-3 span.normal {
+                color: green;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js" type="text/javascript" charset="utf-8" async defer></script>
+    </head>
+    <body>
+        <div id="app">
+            <div class="cols">
+                <div class="col-1 common">
+                    <p>
+                        WebGL是一种3D绘图协议，这种绘图技术标准允许把JavaScript和OpenGL ES 2.0结合在一起，通过增加OpenGL ES 2.0的一个JavaScript绑定，WebGL可以为HTML5 Canvas提供硬件3D加速渲染。
+                        <img src="../../assets/img/webgl.jpg" alt="webgl">
+                        这样Web开发人员就可以借助系统显卡来在浏览器里更流畅地展示3D场景和模型了，还能创建复杂的导航和数据视觉化。显然，WebGL技术标准免去了开发网页专用渲染插件的麻烦，可被用于创建具有复杂3D结构的网站页面，甚至可以用来设计3D网页游戏等等。
+                    </p>
+                </div>
+                <div class="col-2 common">
+                    <div class="float">
+                        <img src="../../assets/img/cross.png" alt="cross">
+                        基督教 法西斯 红十字会这些组织都使用同一种标志，十字架来符号化自身。
+                    </div>
+                </div>
+                <div class="col-3 common">
+                    <span class="normal" style="color: red;">
+                        为非替换内联元素设置margin，上下外边距失效，左右外边距有效。
+                        为非替换内联元素设置padding，border都有效。
+                    </span>
+                    <span class="display">
+                        一旦内联元素的float值不是none，元素就变成了一个块级元素，即便它之前是内联元素。
+                        此时元素的display属性值是block。因此没有必要为浮动后的元素设置display:block。
+                    </span>
+                </div>
+                <div class="col-4 common">
+                    <img src="../../assets/img/webgl.jpg" alt="webgl">
+                    <p>行框盒子不会和浮动元素重叠，块级盒子会和浮动元素重叠。浮动元素后面</p>
+                </div>
+                <div class="col-5 common">
+                    <div class="father">
+                        <div class="float-container">
+                            <img src="../../assets/img/cross.png" alt="cross">
+                        </div>
+                        图片被包裹在float-container容器内部，float-container包裹着图片，
+                        自适应图片的尺寸。内联状态下的图片底部存在间隙，这一点十分奇怪，需要注意。
+                    </div>
+                    <div>
+                        当使用浮动元素的时候，比较稳妥的做法还是采用一些手段干净地清除浮动带来的影响，
+                        以避免很多意料之外的样式问题的发生。
+                    </div>
+                </div>
+                <div class="col-6 common">
+                    浮动的方向是相对于行框盒子 line-box 而不是针对块状盒子 content-box。
+                    <img src="../../assets/img/cross.png" alt="cross">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

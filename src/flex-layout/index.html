@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <script src="index.js" type="text/javascript" charset="utf-8" async defer></script>
+        <title>flex布局</title>
+    </head>
+    <body>
+        <div id="app">
+            <div>
+                <p>锄禾日当午</p>
+                <p>汗滴禾下土</p>
+            </div>
+            <div>
+                <ul>
+                    <li>数据结构和算法设计</li>
+                    <li>数据结构和算法设计</li>
+                    <li>数据结构和算法设计</li>
+                </ul>
+            </div>
+            <div class="box-1 common"></div>
+            <div class="box-2 common">
+                <div class="box-21">
+                    css世界中默认流的方向是水平的，
+                    因此对于图片元素，margin只能改变水平方向的尺寸，无法改变垂直方向尺寸。
+                </div>
+            </div>
+            <div class="box-3 common">
+                <div class="box-31">
+                    当元素的width已经设置了确定的宽度后
+                    此时，设置margin不会改变元素的可是尺寸。
+                </div>
+            </div>
+            <div class="box-4 common">
+                <div class="box-41">
+                    对于具有拉伸特性的绝对定位元素
+                    margin可以改变元素的垂直方向的尺寸。
+                    前提是没有为元素设置width/height。
+                </div>
+            </div>
+            <div class="box-5 common">
+                <ul>
+                    <li>浮动布局不了解</li>
+                    <li>margin负边距</li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="box-6 common">
+                <div class="box-61">
+                    滚动容器底部留白使用padding是不推荐的，
+                    因为兼容性是个大问题。可以借助margin的外部尺寸特性来实现底部留白。
+                    使用子元素上的margin-bottom替换父元素上的padding-bottom。
+                    可以解决兼容性问题。
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

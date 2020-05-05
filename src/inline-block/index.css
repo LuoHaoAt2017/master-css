@@ -1,0 +1,31 @@
+.cols .common {
+	width: 100%;
+	background: #f0f;
+	margin-bottom: 15px;
+}
+
+.cols .common span {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background: #f00;
+	margin: 10px;
+	padding: 10px;
+	float: left;
+}
+
+.cols .col-1:after {
+	display: block;		/*必须*/
+	clear: left;		/*清除浮动的方向*/
+	content: "clear";   /*必须包含content*/
+	line-height: 0;     /*隐藏after伪元素*/
+	visibility: hidden; /*隐藏content*/
+}
+
+.cols .col-2 .fix {
+	clear: both;
+}
+
+.cols .col-3 {
+	overflow: hidden;
+}
