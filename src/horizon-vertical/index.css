@@ -1,0 +1,38 @@
+.li-bai {
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #aaa;
+    height: 300px;
+    width: 100vw;
+}
+
+.li-bai img {
+    display: table;
+    margin: 0 auto;
+}
+
+.bao-zhao {
+    position: relative;
+    height: 300px;
+    border: 1px solid #aaa;
+    margin: 20px 0;
+}
+
+.bao-zhao img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.wang-wei {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    border: 1px solid #aaa;
+}
+
+img {
+    height: 200px;
+}

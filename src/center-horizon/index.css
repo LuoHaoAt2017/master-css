@@ -49,9 +49,9 @@
 .wang-wei {
     border: 1px solid blueviolet;
     margin-bottom: 20px;
-    display: flex; /* 父元素设置flex，将子元素设置成flex-item。 */
 }
 
 .wang-wei .mountain-brook {
+    display: table; /* block 也可以 */
     margin: 0 auto; /* 子元素设置margin */
 }

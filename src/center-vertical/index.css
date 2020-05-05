@@ -1,0 +1,32 @@
+.li-bai {
+    border: 1px solid #aaa;
+    display: table-cell;
+    vertical-align: middle;
+    height: 500px;
+    margin-bottom: 20px;
+}
+
+.wang-wei {
+    border: 1px solid #aaa;
+    margin-bottom: 20px;
+    position: relative;
+    height: 500px;
+}
+.wang-wei .mountain-brook {
+    position: absolute;
+    top: 50%;
+    /* transform属于css3内容，兼容性存在一定问题，高版本浏览器需要添加一些前缀 */
+    transform: translateY(-50%);
+}
+
+.bao-zhao {
+    border: 1px solid #eeeeee;
+    margin-bottom: 20px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.mountain-brook {
+    height: 300px;
+}
