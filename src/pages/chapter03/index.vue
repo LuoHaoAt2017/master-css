@@ -42,23 +42,6 @@ export default {
         margin-bottom: 30px;
         z-index: 2;
         background: #fff;
-        .link {
-            flex-basis: 150px;
-            flex-grow: 1;
-            flex-shrink: 1;
-
-            background: none;
-            outline: none;
-            background: #fff;
-            border: 1px solid #eee;
-            padding: 10px 20px;
-            font-size: 24px;
-
-            cursor: pointer;
-        }
-        .link:hover {
-            background: #eee;
-        }
     }
     .footer {
         position: sticky;
