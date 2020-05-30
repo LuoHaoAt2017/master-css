@@ -4,7 +4,7 @@ import VueRouter from 'vue-router';
 const routes = [
 	{
 		path: '/',
-		redirect: '/grid-layout'
+		redirect: '/problem-1px'
 	},
 	{
 		path: '/sticky',
@@ -57,6 +57,11 @@ const routes = [
 				component: () => import('@/pages/chapter04/complex.vue'),
 			}
 		]
+	},
+	{
+		path: '/problem-1px',
+		name: 'Problem1px',
+		component: () => import('@/pages/chapter04/index.vue')
 	}
 ];
 

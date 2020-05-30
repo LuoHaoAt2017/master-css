@@ -27,6 +27,7 @@ module.exports = {
                 use: [
                     'vue-style-loader',
                     'css-loader',
+                    'postcss-loader',
                     'sass-loader'
                 ]
             },
@@ -45,7 +46,10 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'public/index.html')
+            inject: true,
+            filename: 'index.html',
+            template: path.resolve(__dirname, "./public/index.html"),
+            favicon: path.resolve(__dirname, './public/logo.ico')
         }),
         new VueLoaderPlugin()
     ],
